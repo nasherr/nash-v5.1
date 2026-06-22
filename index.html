@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nash. V5.1 — Your guide to passing</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand-mini">
+        <h1>Nash.</h1>
+        <p>Your guide to passing.</p>
+      </div>
+      <nav class="side-nav">
+        <button data-route="home">⌂ Home</button>
+        <button data-route="dashboard">▥ Dashboard</button>
+        <button data-route="paths">▤ Paths</button>
+        <button data-route="practice">◎ Practice</button>
+        <button data-route="tutor">✦ Tutor</button>
+        <button data-route="flashcards">▣ Flashcards</button>
+        <button data-route="feedback">✎ Feedback</button>
+      </nav>
+      <div class="mini-card">
+        <b>AI Tutor</b>
+        <p>Ask Nash using the selected subject and your progress.</p>
+        <button class="primary small" onclick="setRoute('tutor')">Start chat</button>
+      </div>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <div>
+          <h1>Nash.</h1>
+          <p class="tagline">Your guide to passing.</p>
+        </div>
+        <button id="resetBtn" class="ghost-btn">Reset</button>
+      </header>
+      <main id="app"></main>
+    </div>
+
+    <nav class="bottom-nav">
+      <button data-route="home">Home</button>
+      <button data-route="dashboard">Dashboard</button>
+      <button data-route="practice">Practice</button>
+      <button data-route="tutor">Tutor</button>
+      <button data-route="paths">Paths</button>
+      <button data-route="feedback">Feedback</button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
